@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       this.belongsTo(models.Tags, {
         foreignKey: 'tagId'
       })
-      this.belongsTo(models.Articles, {
+      this.belongsTo(models.Article, {
         foreignKey: 'articleId'
       })
     }

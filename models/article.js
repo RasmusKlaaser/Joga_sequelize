@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
           field: 'author_id',
         } 
       })
-      this.belongsToMany(models.Tag, {
+      this.belongsToMany(models.Tags, {
         foreignKey: 'articleId',
         through: 'Articletags',
       })
